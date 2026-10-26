@@ -1,0 +1,21 @@
+
+{
+  "rewrites": [
+    {
+      "source": "/api/auth/:path*",
+      "destination": "https://auth-gateway-gcp-url.run.app/:path*"
+    },
+    {
+      "source": "/api/iot/:path*",
+      "destination": "https://iot-service-gcp-url.run.app/:path*"
+    },
+    {
+      "source": "/api/cobot/:path*",
+      "destination": "https://cobot-service-gcp-url.run.app/:path*"
+    },
+    {
+      "source": "/api/mes/:path*",
+      "destination": "https://mes-service-gcp-url.run.app/:path*"
+    }
+  ]
+}
